@@ -1,0 +1,96 @@
+body {
+  background-color: #FADBD8; /* Soft Peach */
+}
+
+header {
+  background-color: #FFFFFF; /* White */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#logo{
+  float: left;
+  margin-right: 10px;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Arial", sans-serif;
+  color: #000000; /* Black */
+}
+
+h1 {
+  font-size: 24px; /* Largest header size */
+}
+
+h3 {
+  font-size: 18px; /* Second largest header */
+}
+
+p {
+  font-size: 16px; /* Body text size */
+}
+
+main {
+  background-color: #FFFFFF; /* White */
+  border-radius: 10px;
+}
+
+aside {
+  background-color: #FFFFFF; /* White */
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #B19CD9; /* Lavender */
+  border-radius: 10px;
+}
+
+/* Navigation styling */
+nav li {
+  border: 2px solid #E74C3C; /* Sunset Orange (Accent Colour) */
+  background-color: #B19CD9; /* Lavender (Main Colour) */
+  list-style-type: none;
+}
+
+nav li a {
+  color: #FFFFFF; /* White (Secondary Text Colour) */
+  text-align: center;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: #8E73B5; /* Darker Lavender (Selection Colour) */
+}
+
+.active {
+  background-color: #E74C3C; /* Sunset Orange (Interactive Feature Colour) */
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th {
+    border: 2px solid #F0F0F0;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+table tr:hover {
+    background-color: #FADBD8; /* Soft Peach */
+}
+
+table th {
+    background-color: #B19CD9; /* Lavender */
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
