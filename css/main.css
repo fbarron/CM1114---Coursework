@@ -6,13 +6,14 @@ header {
   background-color: #FFFFFF; /* White */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  padding: 10px; 
 }
 
-#logo{
+#logo {
   float: left;
   margin-right: 10px;
-  max-width: 100px;
-  max-height: 100px;
+  height: 50px; 
+  width: 50px; 
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -22,6 +23,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1 {
   font-size: 24px; /* Largest header size */
+  display: inline; 
+  margin-left: 16px; /* Space between border and content */
 }
 
 h3 {
@@ -70,27 +73,27 @@ nav li:hover {
 
 /* Table styling */
 table {
-    border-collapse: collapse;
-    width: 100%;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 table td, table th {
-    border: 2px solid #F0F0F0;
-    padding: 8px;
+  border: 2px solid #F0F0F0;
+  padding: 8px;
 }
 
 table tr:nth-child(even) {
-    background-color: #F2F2F2;
+  background-color: #F2F2F2;
 }
 
 table tr:hover {
-    background-color: #FADBD8; /* Soft Peach */
+  background-color: #FADBD8; /* Soft Peach */
 }
 
 table th {
-    background-color: #B19CD9; /* Lavender */
-    color: white;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
+  background-color: #B19CD9; /* Lavender */
+  color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
 }
