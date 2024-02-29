@@ -1,12 +1,17 @@
 body {
   background-color: #FADBD8; /* Soft Peach */
+  margin: 10px; /* Add margin to the body */
 }
 
 header {
   background-color: #FFFFFF; /* White */
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  height: 70px;
+  border-radius: 10px ;
   padding: 10px; 
+  margin-bottom: 20px; /* Add margin to the bottom */
+}
+#myHeading {
+  display: inline;
 }
 
 #logo {
@@ -19,12 +24,14 @@ header {
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Arial", sans-serif;
   color: #000000; /* Black */
+  margin: 0; /* Reset default margins */
 }
 
 h1 {
-  font-size: 24px; /* Largest header size */
-  display: inline; 
+  float: left;
+  font-size: 35px; /* Largest header size */
   margin-left: 16px; /* Space between border and content */
+  margin-top: 5px;
 }
 
 h3 {
@@ -35,7 +42,23 @@ p {
   font-size: 16px; /* Body text size */
 }
 
+#imageCarousel {
+  color: #FFFFFF;
+}
+
 main {
+  background-color: #FFFFFF; /* White */
+  border-radius: 10px;
+  margin-bottom: 20px; /* Add margin to the bottom */
+}
+
+#Contactmain {
+  padding: 0px;
+  background-color: #FFFFFF; /* White */
+  border-radius: 10px;
+}
+
+#ContactSection {
   background-color: #FFFFFF; /* White */
   border-radius: 10px;
 }
@@ -48,13 +71,24 @@ aside {
 footer {
   background-color: #B19CD9; /* Lavender */
   border-radius: 10px;
+  margin-top: 20px; /* Add margin to the top */
+  margin-bottom: 10px; /* Add margin to the bottom */
 }
 
 /* Navigation styling */
+nav ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 nav li {
   border: 2px solid #E74C3C; /* Sunset Orange (Accent Colour) */
   background-color: #B19CD9; /* Lavender (Main Colour) */
   list-style-type: none;
+  float: left;
+  width: 15%;
+  padding: 16px;
 }
 
 nav li a {
@@ -96,4 +130,20 @@ table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
+}
+
+article, main, nav, section{
+  padding: 10px;
+  margin-bottom: 20px; /* Add margin to the bottom */
+}
+
+#left-column {
+  float: left;
+  width: 65%;
+  padding-right: 20px;
+}
+
+#right-column {
+  float: left;
+  width: 25%; 
 }
