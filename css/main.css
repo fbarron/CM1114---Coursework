@@ -1,8 +1,10 @@
+/* Setting up the basic body styles */
 body {
   background-color: #FADBD8; /* Soft Peach */
   margin: 10px; /* Add margin to the body */
 }
 
+/* Styling the header */
 header {
   background-color: #FFFFFF; /* White */
   height: 70px;
@@ -10,10 +12,13 @@ header {
   padding: 10px; 
   margin-bottom: 20px; /* Add margin to the bottom */
 }
+
+/* Styling the heading inside the header */
 #myHeading {
   display: inline;
 }
 
+/* Styling the logo */
 #logo {
   float: left;
   margin-right: 10px;
@@ -21,6 +26,7 @@ header {
   width: 50px; 
 }
 
+/* Styling the heading font */
 .montserrat-heading {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -28,6 +34,7 @@ header {
   font-style: normal;
 }
 
+/* Styling all headings and paragraphs */
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -37,6 +44,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0; /* Reset default margins */
 }
 
+/* Styling the largest heading */
 h1 {
   float: left;
   font-size: 35px; /* Largest header size */
@@ -44,40 +52,48 @@ h1 {
   margin-top: 5px;
 }
 
+/* Styling the third largest heading */
 h3 {
   font-size: 18px; /* Second largest header */
 }
 
+/* Styling paragraphs */
 p {
   font-size: 16px; /* Body text size */
 }
 
+/* Styling the image carousel */
 #imageCarousel {
   color: #FFFFFF;
 }
 
+/* Styling the main section */
 main {
   background-color: #FFFFFF; /* White */
   border-radius: 10px;
   margin-bottom: 20px; /* Add margin to the bottom */
 }
 
+/* Styling the contact main section */
 #Contactmain {
   padding: 0px;
   background-color: #FFFFFF; /* White */
   border-radius: 10px;
 }
 
+/* Styling the contact section */
 #ContactSection {
   background-color: #FFFFFF; /* White */
   border-radius: 10px;
 }
 
+/* Styling the aside section */
 aside {
   background-color: #FFFFFF; /* White */
   border-radius: 10px;
 }
 
+/* Styling the footer */
 footer {
   background-color: #B19CD9; /* Lavender */
   border-radius: 10px;
@@ -85,13 +101,14 @@ footer {
   margin-bottom: 10px; /* Add margin to the bottom */
 }
 
-/* Navigation styling */
+/* Styling the navigation */
 nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
+/* Styling navigation list items */
 nav li {
   border: 2px solid #E74C3C; /* Sunset Orange (Accent Colour) */
   background-color: #B19CD9; /* Lavender (Main Colour) */
@@ -101,39 +118,46 @@ nav li {
   padding: 16px;
 }
 
+/* Styling navigation links */
 nav li a {
   color: #FFFFFF; /* White (Secondary Text Colour) */
   text-align: center;
   text-decoration: none;
 }
 
+/* Hover effect on navigation items */
 nav li:hover {
   background-color: #8E73B5; /* Darker Lavender (Selection Colour) */
 }
 
+/* Styling the active navigation item */
 .active {
   background-color: #E74C3C; /* Sunset Orange (Interactive Feature Colour) */
 }
 
-/* Table styling */
+/* Styling the table */
 table {
   border-collapse: collapse;
   width: 100%;
 }
 
+/* Styling table cells and headers */
 table td, table th {
   border: 2px solid #F0F0F0;
   padding: 8px;
 }
 
+/* Alternating row colors in the table */
 table tr:nth-child(even) {
   background-color: #F2F2F2;
 }
 
+/* Hover effect on table rows */
 table tr:hover {
   background-color: #FADBD8; /* Soft Peach */
 }
 
+/* Styling table headers */
 table th {
   background-color: #B19CD9; /* Lavender */
   color: white;
@@ -142,18 +166,46 @@ table th {
   text-align: left;
 }
 
+/* Adding padding and margin to various sections */
 article, main, nav, section{
   padding: 10px;
   margin-bottom: 20px; /* Add margin to the bottom */
 }
 
+/* Styling the left column */
 #left-column {
   float: left;
   width: 65%;
   padding-right: 20px;
 }
 
+/* Styling the right column */
 #right-column {
   float: left;
   width: 25%; 
+}
+
+/* Styling the gallery images */
+.gallery-img {
+  width: 100%;
+}
+
+/* Styling the image gallery */
+#img-gallery {
+  padding-top: 10px;
+}
+
+/* Adding margin between rows in the image gallery */
+#img-gallery .row {
+  margin-bottom: 10px;
+}
+
+/* Creating a container for members */
+.members-container {
+  display: flex;
+}
+
+/* Adding margin between each member */
+.col-sm {
+  margin-right: 20px; /* Add spacing between each member */
 }
