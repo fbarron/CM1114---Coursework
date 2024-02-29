@@ -21,8 +21,18 @@ header {
   width: 50px; 
 }
 
+.montserrat-heading {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* Adjust the weight as needed */
+  font-style: normal;
+}
+
 h1, h2, h3, h4, h5, h6, p {
-  font-family: "Arial", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* Adjust the weight as needed */
+  font-style: normal;
   color: #000000; /* Black */
   margin: 0; /* Reset default margins */
 }
