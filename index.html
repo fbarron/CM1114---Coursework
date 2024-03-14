@@ -13,12 +13,20 @@
 
 <body>
     <!-- Header -->
-    <header>
+    <header id="homeHeader">
         <!-- Logo -->
         <img src="images/SiegeLogo.png" alt="Rainbow Six Siege Logo" id="logo">
         <!-- Heading -->
         <h1 id="myHeading">Tom Clancy's Rainbow Six Siege Society</h1>
+        
+        <!-- Login Form -->
+        <form id="loginForm" class="form-inline" style="float: right;">
+            <input type="email" class="form-control mr-sm-2" placeholder="Email">
+            <input type="password" class="form-control mr-sm-2" placeholder="Password">
+            <button type="button" class="btn btn-primary" onclick="login()">Login</button>
+        </form>
     </header>
+
 
     <!-- Navigation -->
     <nav>
@@ -105,6 +113,18 @@
             <p>Copyright Fraser Barron</p>
         </section>
     </footer>
-
+    
+    <script>
+        var counter = 2;
+        
+        function login() {
+            if (counter % 2 == 0) {
+                alert('You have been logged in!');
+            } else {
+                alert('You have been logged out!');
+            }
+            counter += 1;
+        }
+    </script>
 </body>
 </html>

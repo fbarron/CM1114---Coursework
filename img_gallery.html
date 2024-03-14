@@ -45,39 +45,39 @@
                 <div class="row">
                     <!-- Image 1 -->
                     <div class="col-sm-4">
-                        <img src="images/Blackice.jpeg" alt="Rainbow Six Siege Black Ice Weapon Skin for L85A2 Gun" class="gallery-img">
+                        <img src="images/Blackice.jpeg" alt="Rainbow Six Siege Black Ice Weapon Skin for L85A2 Gun" class="gallery-img" id="img-gallery1">
                     </div>
                     <!-- Image 2 -->
                     <div class="col-sm-4">
-                        <img src="images/Chibi.jpeg" alt="Rainbow Six Siege Operator Ash Chibi" class="gallery-img">
+                        <img src="images/Chibi.jpeg" alt="Rainbow Six Siege Operator Ash Chibi" class="gallery-img" id="img-gallery1">
                     </div>
                     <!-- Image 3 -->
                     <div class="col-sm-4">
-                        <img src="images/FanArt.png" alt="Rainbow Six Siege FanArt featuring Operators Sledge, Blitz, Fuze, and Castle" class="gallery-img">
+                        <img src="images/FanArt.png" alt="Rainbow Six Siege FanArt featuring Operators Sledge, Blitz, Fuze, and Castle" class="gallery-img" id="img-gallery1">
                     </div>
                     <!-- Image 4 -->
                     <div class="col-sm-4">
-                        <img src="images/Gadgets.jpeg" alt="Rainbow Six Siege In-Game Gadgets" class="gallery-img">
+                        <img src="images/Gadgets.jpeg" alt="Rainbow Six Siege In-Game Gadgets" class="gallery-img" id="img-gallery1">
                     </div>
                     <!-- Image 5 -->
                     <div class="col-sm-4">
-                        <img src="images/Gameplay.jpeg" alt="Rainbow Six Siege Gameplay Screenshot" class="gallery-img">
+                        <img src="images/Gameplay.jpeg" alt="Rainbow Six Siege Gameplay Screenshot" class="gallery-img" id="img-gallery1">
                     </div>
                     <!-- Image 6 -->
                     <div class="col-sm-4">
-                        <img src="images/MultipleOperators.jpeg" alt="Rainbow Six Siege Operators Sledge, Mira, Dokkaebi, Jäger" class="gallery-img">
+                        <img src="images/MultipleOperators.jpeg" alt="Rainbow Six Siege Operators Sledge, Mira, Dokkaebi, Jäger" class="gallery-img" id="img-gallery1">
                     </div>
                     <!-- Image 7 -->
                     <div class="col-sm-4">
-                        <img src="images/Oregon.png" alt="Rainbow Six Siege Oregon Map" class="gallery-img">
+                        <img src="images/Oregon.png" alt="Rainbow Six Siege Oregon Map" class="gallery-img" id="img-gallery1">
                     </div>
                     <!-- Image 8 -->
                     <div class="col-sm-4">
-                        <img src="images/Planting.jpeg" alt="Rainbow Six Siege Planting Bomb" class="gallery-img">
+                        <img src="images/Planting.jpeg" alt="Rainbow Six Siege Planting Bomb" class="gallery-img" id="img-gallery1">
                     </div>
                     <!-- Image 9 -->
                     <div class="col-sm-4">
-                        <img src="images/Sledge.jpeg" alt="Rainbow Six Siege Operator Sledge" class="gallery-img">
+                        <img src="images/Sledge.jpeg" alt="Rainbow Six Siege Operator Sledge" class="gallery-img" id="img-gallery1">
                     </div>
                 </div>
             </div>
@@ -89,5 +89,35 @@
     <footer>
         
     </footer>
+    <script>
+        // Get the parent container of all images
+        const galleryContainer = document.getElementById("img-gallery");
+
+        // Add EventListener to the parent container
+        galleryContainer.addEventListener("mouseover", function(event) {
+            // Check if the event target is an image
+            if (event.target.classList.contains("gallery-img")) {
+                highlight(event.target); // Call highlight function passing the target image
+            }
+        });
+
+        // Function to highlight the selected image
+        function highlight(image) {
+            image.style.border = "solid blue 2px";
+        }
+
+        // Add EventListener to handle non-hovered images
+        galleryContainer.addEventListener("mouseout", function(event) {
+            // Check if the event target is an image
+            if (event.target.classList.contains("gallery-img")) {
+                delight(event.target); // Call delight function passing the target image
+            }
+        });
+
+        // Function to return non-hovered images to normal state
+        function delight(image) {
+            image.style.border = "none";
+        }
+    </script>
 </body>
 </html>
