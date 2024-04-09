@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rainbow Six Siege | FAQ</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include necessary CSS and fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/main.css'>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="images/SiegeLogo.png" alt="Rainbow Six Siege Logo" id="logo">
+        <h1 id="myHeading">Tom Clancy's Rainbow Six Siege Society</h1>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="img_gallery.html">Gallery</a></li>
+            <li><a href="current_members.html">Current Members</a></li>
+            <li><a href="event_calendar.html">Events</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="rules_and_regulations.html">Rules and Regulations</a></li>
+            <li class="active"><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="Faqmain">
+        <div id ="faq-column">
+            <!-- FAQ Section -->
+        <section id="ContactSection">
+            <h2>Frequently Asked Questions</h2>
+            <dl>
+                <dt>1. How can I join the Rainbow Six Siege Society?</dt>
+                <dd>To join our society, simply fill out the membership form below and agree to abide by our rules and regulations.</dd>
+                <dt>2. Are there any membership fees?</dt>
+                <dd>No, membership is completely free.</dd>
+                <dt>3. When are the society events held?</dt>
+                <dd>Events are typically scheduled on weekends, but specific dates and times may vary. Check our event calendar for details.</dd>
+            </dl>
+        </section>
+
+        <section id="ContactSection" >
+            <h2>Membership Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Enter your contact information.</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+        
+                    <label for="email">Email address:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+        
+                    <label for="membership">Membership Wanted:</label>
+                    <select id="membership" name="membership" required>
+                        <option value="Newbie-Adventurer">Newbie-Adventurer</option>
+                        <option value="Skilled-Raider">Skilled-Raider</option>
+                        <option value="Epic-Champion">Epic-Champion</option>
+                        <option value="Legendary-Overlord">Legendary-Overlord</option>
+                    </select><br><br>
+        
+                    <label for="reason">Why you want to join the club</label>
+                    <textarea id="reason" name="reason" rows="4" cols="50" required></textarea><br><br>
+        
+                    <input type="button" value="Submit" onclick="return send_form('form_outcome', 'Form has been sent successfully!')">
+                </fieldset>
+            </form>
+        </section>
+        <div>
+            <p id="form_outcome"></p>
+        </div>
+        </div>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <!-- Copyright Section -->
+        <section>
+            <p>Copyright Fraser Barron 2024</p>
+        </section>
+    </footer>
+    <script>
+        function validateForm() {
+            var form = document.querySelector('form');
+            return form.checkValidity();
+        }
+    
+        function send_form(id, message) {
+            if (validateForm()) {
+                document.getElementById(id).innerHTML = message;
+            } else {
+                document.getElementById(id).innerHTML = "Please fill out all required fields.";
+            }
+        }
+    </script>
+</body>
+</html>

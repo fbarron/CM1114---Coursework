@@ -1,3 +1,14 @@
+<!--
+Threat Model
+
+Threat Source: External
+Threat Agent: Human
+Threat Intention: Unauthorized access or tampering
+Threat Motivation: Malicious intent, data theft, disruption
+Threat Impact: Unauthorized access to user accounts, leakage of sensitive information, website downtime
+Threat Mitigation: Implement strong password policies, utilize HTTPS for secure communication, implement CAPTCHA or reCAPTCHA to prevent automated attacks, regularly update server software for security patches.
+-->
+
 <!DOCTYPE html>
 <head>
     <title>Rainbow Six Siege | Home</title>
@@ -21,8 +32,8 @@
         
         <!-- Login Form -->
         <form id="loginForm" class="form-inline" style="float: right;">
-            <input type="email" class="form-control mr-sm-2" placeholder="Email">
-            <input type="password" class="form-control mr-sm-2" placeholder="Password">
+            <input type="email" id="email" class="form-control mr-sm-2" placeholder="Email">
+            <input type="password" id="password" class="form-control mr-sm-2" placeholder="Password">
             <button type="button" class="btn btn-primary" onclick="login()">Login</button>
         </form>
     </header>
@@ -37,6 +48,9 @@
             <li><a href="current_members.html">Current Members</a></li>
             <li><a href="event_calendar.html">Events</a></li>
             <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="rules_and_regulations.html">Rules and Regulations</a></li>
+            <li><a href="faq.html">FAQ</a></li>
         </ul>
     </nav>
 
@@ -103,14 +117,26 @@
 
     <!-- Aside Section -->
     <aside>
-        <h3>Latest Tweets</h3>
+        <h3>Latest News</h3>
+        <!-- News Article -->
+        <article class="news-article">
+            <!-- Image -->
+            <img src="images/Y9S1_OperatorKeyart_FINAL.jpeg" alt="Rainbow Six Siege New Season Operator" class="article-image">
+            <!-- Text Content -->
+            <div class="article-content">
+                <!-- Headline -->
+                <h2>Exciting News: New Operation Announcement!</h2>
+                <!-- Content -->
+                <p>Get ready, operators! The latest intel suggests that a new operation is on the horizon, bringing fresh challenges and strategies to the battlefield. Stay tuned for updates as we prepare to dive into the next chapter of Rainbow Six Siege.</p>
+            </div>
+        </article>
     </aside>
 
     <!-- Footer -->
     <footer>
         <!-- Copyright Section -->
         <section>
-            <p>Copyright Fraser Barron</p>
+            <p>Copyright Fraser Barron 2024</p>
         </section>
     </footer>
     
@@ -118,12 +144,19 @@
         var counter = 2;
         
         function login() {
-            if (counter % 2 == 0) {
-                alert('You have been logged in!');
-            } else {
-                alert('You have been logged out!');
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if (email === "" || password === "") {
+                alert('Please enter your email and password!');
+            } else{
+                if (counter % 2 == 0) {
+                    alert('You have been logged in!');
+                } else {
+                    alert('You have been logged out!');
+                }   
+                counter += 1;
             }
-            counter += 1;
         }
     </script>
 </body>

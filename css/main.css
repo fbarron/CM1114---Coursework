@@ -1,23 +1,23 @@
 /* Setting up the basic body styles */
 body {
-  background-color: #FADBD8; /* Soft Peach */
+  background-color: #171717; /* Operator Black */
   margin: 10px; /* Add margin to the body */
 }
 
 /* Styling the header */
 header {
-  background-color: #FFFFFF; /* White */
+  background-color: #2C2C2C; /* Operator Dark Gray */
   height: 70px;
-  border-radius: 10px ;
-  padding: 10px; 
+  border-radius: 10px;
+  padding: 10px;
   margin-bottom: 20px; /* Add margin to the bottom */
 }
 
 #homeHeader {
-  background-color: #FFFFFF; /* White */
+  background-color: #2C2C2C; /* Operator Dark Gray */
   height: 70px;
-  border-radius: 10px ;
-  padding: 10px; 
+  border-radius: 10px;
+  padding: 10px;
   margin-bottom: 20px; /* Add margin to the bottom */
   display: flex;
   justify-content: space-between;
@@ -46,8 +46,8 @@ header {
 #logo {
   float: left;
   margin-right: 10px;
-  height: 50px; 
-  width: 50px; 
+  height: 50px;
+  width: 50px;
 }
 
 /* Styling the heading font */
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-optical-sizing: auto;
   font-weight: 700; /* Adjust the weight as needed */
   font-style: normal;
-  color: #000000; /* Black */
+  color: #FFFFFF; /* White */
   margin: 0; /* Reset default margins */
 }
 
@@ -93,7 +93,7 @@ p {
 
 /* Styling the main section */
 main {
-  background-color: #FFFFFF; /* White */
+  background-color: #2C2C2C; /* Operator Dark Gray */
   border-radius: 10px;
   margin-bottom: 20px; /* Add margin to the bottom */
 }
@@ -101,28 +101,44 @@ main {
 /* Styling the contact main section */
 #Contactmain {
   padding: 0px;
-  background-color: #FFFFFF; /* White */
+  background-color: #2C2C2C; /* Operator Dark Gray */
+  border-radius: 10px;
+}
+
+/* Styling the Faw main section */
+#Faqmain {
+  padding: 0px;
+  background-color: #2C2C2C; /* Operator Dark Gray */
   border-radius: 10px;
 }
 
 /* Styling the contact section */
 #ContactSection {
-  background-color: #FFFFFF; /* White */
+  background-color: #2C2C2C; /* Operator Dark Gray */
   border-radius: 10px;
+  color: #FFFFFF;
+}
+
+/* Styling the FAQ section */
+#FaqSection {
+  background-color: #2C2C2C; /* Operator Dark Gray */
+  border-radius: 10px;
+  color: #FFFFFF;
 }
 
 /* Styling the aside section */
 aside {
-  background-color: #FFFFFF; /* White */
+  background-color: #2C2C2C; /* Operator Dark Gray */
   border-radius: 10px;
 }
 
 /* Styling the footer */
 footer {
-  background-color: #B19CD9; /* Lavender */
+  background-color: #BF691A; /* Operator Orange */
   border-radius: 10px;
-  margin-top: 20px; /* Add margin to the top */
+  margin-top: auto; /* Add margin to the top */
   margin-bottom: 10px; /* Add margin to the bottom */
+  clear: both;
 }
 
 /* Styling the navigation */
@@ -130,33 +146,36 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
 }
 
 /* Styling navigation list items */
 nav li {
-  border: 2px solid #E74C3C; /* Sunset Orange (Accent Colour) */
-  background-color: #B19CD9; /* Lavender (Main Colour) */
+  border: 2px solid #BF691A; /* Operator Orange */
+  background-color: #2C2C2C; /* Operator Dark Gray */
   list-style-type: none;
-  float: left;
-  width: 15%;
+  box-sizing: border-box;
   padding: 16px;
+  text-align: center;
+  flex: 1;
 }
 
 /* Styling navigation links */
 nav li a {
-  color: #FFFFFF; /* White (Secondary Text Colour) */
+  color: #FFFFFF; /* White */
   text-align: center;
   text-decoration: none;
 }
 
 /* Hover effect on navigation items */
 nav li:hover {
-  background-color: #8E73B5; /* Darker Lavender (Selection Colour) */
+  background-color: #383838; /* Operator Light Gray */
 }
 
 /* Styling the active navigation item */
 .active {
-  background-color: #E74C3C; /* Sunset Orange (Interactive Feature Colour) */
+  background-color: #BF691A; /* Operator Orange */
 }
 
 /* Styling the table */
@@ -166,32 +185,39 @@ table {
 }
 
 /* Styling table cells and headers */
-table td, table th {
-  border: 2px solid #F0F0F0;
+table td,
+table th {
+  border: 2px solid #FFFFFF; /* White */
   padding: 8px;
+  vertical-align: middle;
+  width: 10%;
+  font-size: 10pt;
 }
 
 /* Alternating row colors in the table */
 table tr:nth-child(even) {
-  background-color: #F2F2F2;
+  background-color: #383838; /* Operator Light Gray */
 }
 
 /* Hover effect on table rows */
 table tr:hover {
-  background-color: #FADBD8; /* Soft Peach */
+  background-color: #4F4F4F; /* Operator Medium Gray */
 }
 
 /* Styling table headers */
 table th {
-  background-color: #B19CD9; /* Lavender */
+  background-color: #BF691A; /* Operator Orange */
   color: white;
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
+  text-align: center;
 }
 
 /* Adding padding and margin to various sections */
-article, main, nav, section{
+article,
+main,
+nav,
+section {
   padding: 10px;
   margin-bottom: 20px; /* Add margin to the bottom */
 }
@@ -205,8 +231,9 @@ article, main, nav, section{
 
 /* Styling the right column */
 #right-column {
+  margin-left: 85px;
   float: left;
-  width: 25%; 
+  width: 25%;
 }
 
 /* Styling the gallery images */
@@ -217,7 +244,7 @@ article, main, nav, section{
 
 /* Styling for selected image */
 .gallery-img:hover {
-  border: solid blue 2px;
+  border: solid #BF691A 2px; /* Operator Orange */
 }
 
 /* Styling for non-selected images */
@@ -238,9 +265,35 @@ article, main, nav, section{
 /* Creating a container for members */
 .members-container {
   display: flex;
+  text-align: center;
 }
 
 /* Adding margin between each member */
 .col-sm {
   margin-right: 20px; /* Add spacing between each member */
+}
+
+.news-article {
+  display: flex;
+  align-items: center;
+}
+
+.article-image {
+  width: 200px; /* Adjust as needed */
+  margin-right: 20px; /* Adjust spacing between image and text */
+}
+
+.article-content {
+  flex: 1;
+}
+
+#event-calendar {
+  color: #FFFFFF;
+}
+
+/* Styling the Faq */
+#faq-column {
+  float: left;
+  width: 100%;
+  padding-right: 20px;
 }
