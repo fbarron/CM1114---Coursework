@@ -141,23 +141,30 @@ Threat Mitigation: Implement strong password policies, utilize HTTPS for secure 
     </footer>
     
     <script>
-        var counter = 2;
-        
+        var loggedIn = new Boolean(false);
         function login() {
             var email = document.getElementById("email").value;
             var password = document.getElementById("password").value;
+            var valid = new Boolean(true)
 
-            if (email === "" || password === "") {
-                alert('Please enter your email and password!');
-            } else{
-                if (counter % 2 == 0) {
-                    alert('You have been logged in!');
-                } else {
-                    alert('You have been logged out!');
-                }   
-                counter += 1;
+            if (email == "" && loggedIn == false){
+                alert("Please enter your email address!");
+                valid = false;
+            } else {
+                if(password == "" && loggedIn == false){
+                    alert("Please enter your password!");
+                    valid = false;
+                }
             }
-        }
+            
+            if (loggedIn == false && valid == true){
+                alert("Welcome back, " + email + "!");
+                loggedIn = true;
+            } else if (loggedIn == true){
+                alert("You have been logged out");
+                loggedIn = false;
+            }
+        };
     </script>
 </body>
 </html>
