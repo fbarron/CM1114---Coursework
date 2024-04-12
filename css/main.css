@@ -306,3 +306,25 @@ section {
 #Faqmain h2:hover {
   color: red; /* Change the background color */
 }
+
+#MembershipFormSection{
+  background-color: #2C2C2C; /* Operator Dark Gray */
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+#event-recomendation{
+  color: #FFFFFF;
+}
+
+#ContactFormSection{
+  background-color: #2C2C2C; /* Operator Dark Gray */
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+#GetInTouchSection{
+  background-color: #2C2C2C; /* Operator Dark Gray */
+  border-radius: 10px;
+  color: #FFFFFF;
+}
